@@ -9,3 +9,7 @@ app = Flask(__name__)
 def hello_www():
 
     return "Hola Mundo, la fecha y hora son: " + vfecha
+ 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=4000)  # pragma: no cover
+
